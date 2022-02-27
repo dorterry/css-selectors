@@ -12,17 +12,20 @@
 
   <h1>CSS Selectors and Attributes</h1> 
   <h2>CSS Selectors</h2> 
+
+  <!--CSS Selector Table-->
+
   <table> 
       <thead>
       <tr>
-        <th>Selector</th>
-        <th>Meaning</th>
-        <th>Example</th>
+        <th>SELECTOR</th>
+        <th>MEANING</th>
+        <th>EXAMPLE</th>
       </tr>
      </thead>
       <tbody>
           <tr>
-              <td class="fitwidth"><span class="selector">UNIVERSAL SELECTOR</span></td>
+              <td><span class="selector">UNIVERSAL SELECTOR</span></td>
               <td>Applies to all elements in the document</td>
               <td><span class="selector">* { }</span><br>Targets all elements on the page</td>
           </tr>
@@ -55,7 +58,7 @@
           </tr>
 
           <tr>
-              <td><span class="selector">DESCENDENT SELECTOR</span></td>
+              <td class="fitwidth"><span class="selector">DESCENDENT SELECTOR</span></td>
               <td>Matches an element that is a descendent of another specified element (not just a direct child of that element</td>
               <td><span class="selector">p a { }</span><br>Targets any &lt;a&gt; elements that sit inside a &lt;p&gt; element, even if there are other elements nested between them</td>    
           </tr>
@@ -72,21 +75,63 @@
               <td><span class="selector">h1~p { }</span><br>If you had two &lt;p&gt; elements that are siblings of an &lt;h1&gt; element, this rule would apply to both</td>
           </tr>
 
-
-
-
-
-
-
-
-
-
-
-
-
-      </tbody>
+    </tbody>
       </table>
 
+      <h2>Attribute Selectors</h2>
+
+<!--Attribute Selectors Table-->
+
+      <table> 
+        <thead>
+        <tr>
+          <th>SELECTOR</th>
+          <th>MEANING</th>
+          <th>EXAMPLE</th>
+        </tr>
+       </thead>
+        <tbody>
+
+            <tr>
+                <td><span class="selector">EXISTENCE</span></td>
+                <td><span class="selector">[ ]</span><br>Matches a specific attribute<br>(whatever its value)</td>
+                <td><span class="selector">p[class]</span><br>Targets any &lt;p&gt; element with an attribute called class</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">EQUALITY</span></td>
+                <td><span class="selector">[=]</span><br>Matches a specific attribute with a specific value</td>
+                <td><span class="selector">p[class="dog"]</span><br>Targets any &lt;p&gt; element with an attribute called class whose value is dog</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">SPACE</span></td>
+                <td><span class="selector">[~=]</span><br>Matches a specific attribute whose value appears in a space-seperated list of words</td>
+                <td><span class="selector">p[class~="dog"]</span><br>Targets any &lt;p&gt; element with an attribute called class whose value is a list of space-seperated words, one of which is dog</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">PREFIX</span></td>
+                <td><span class="selector">[^=]</span><br>Matches a specific attribute whose value contains a specific string</td>
+                <td><span class="selector">p[attr^"d"]</span><br>Targets any &lt;p&gt; element with an attribute whose value beigns with the letter "d"</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">SUBSTRING</span></td>
+                <td><span class="selector">[*=]</span><br>Matches a specific attribute whose value contains a specific substring</td>
+                <td><span class="selector">p[attr*"do"]</span><br>Targets any &lt;p&gt; element with an attribute whose value contains the letters "do"</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">SUFFIX</span></td>
+                <td><span class="selector">[$=]</span><br>Matches a specific attribute whose value ends with a specific string</td>
+                <td><span class="selector">p[attr$"g"]</span><br>Targets any &lt;p&gt; element with an attribute whose value ends with the letter "g"</td>
+            </tr>
+
+        </tbody>
+
+
+      </table>
 
 
 
