@@ -13,12 +13,64 @@
   <h1>CSS Selectors and Attributes</h1>  
 
   <table>
+      <thead>
       <tr>
         <th>Selector</th>
         <th>Meaning</th>
         <th>Example</th>
       </tr>
-      
+     </thead>
+      <tbody>
+          <tr>
+              <td>Universal Selector</td>
+              <td>Applies to all elements in the document</td>
+              <td>* { }<br>Targets all elements on the page</td>
+          </tr>
+
+          <tr>
+              <td>Type Selector</td>
+              <td>Matches element names</td>
+              <td>h1, h2, h3 { }<br>Targets the &lt;h1&gt;, &lt;h2&gt; and &lt;h3&gt; elements</td>
+          </tr>
+
+          <tr>
+              <td>Class Selector</td>
+              <td>Matches and element whose class attribute has a value that matches the one specified after the 
+                  period (or full stop) symbol</td>
+              <td>.note { }<br>Targets any element whose class attribute has a value of note<br>p.note { }<br>Targets
+            only &lt;p&gt; elements whose class attribute has a value of note</td>
+          </tr>
+
+          <tr>
+              <td>ID Selector</td>
+              <td>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</td>
+              <td>#introduction { }<br>Targets the element whose id attribute has a value of introduction</td>
+          </tr>
+
+          <tr>
+              <td>Child Selector</td>
+              <td>Matches an element that is a direct child of another</td>
+              <td>li&gt;a { }<br>Targets any &lt;a&gt; elements that are children of an &lt;li&gt; element
+            (but not other &lt;a&gt; elements in the page)</td>
+          </tr>
+
+          <tr>
+              <td>Descendant Selector</td>
+              <td>Matches an element that is a descendent of another specified element (not just a direct child of that element</td>
+              <td>p a { }<br>Targets any &lt;a&gt; elements that sit inside a &lt;p&gt; element, even if there are other elements nested between them</td>    
+          </tr>
+
+          <tr>
+              <td>Adjacent Sibling Selector</td>
+              <td>Matches an element that is the next sibling of another</td>
+              <td>h1+p { }<br>Targets the first &lt;p&gt; element after any &lt;h1&gt; element (but not other &lt;p&gt; elements)</td>
+          </tr>
+
+          <tr>
+              <td>General Sibling Selector</td>
+              <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+              <td>h1~p { }<br>If you had two &lt;p&gt; elements that are siblings of an &lt;h1&gt; element, this rule would apply to both</td>
+          </tr>
 
 
 
@@ -32,12 +84,8 @@
 
 
 
-
-
-
-
-
-  </table>
+      </tbody>
+      </table>
 
 
 

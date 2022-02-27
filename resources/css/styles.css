@@ -16,3 +16,13 @@ h1 {
     border-radius: 5px;
     margin: 0 auto;
   }
+
+  thead {
+    background-color: lightgray;
+    text-transform: uppercase;
+  }
+
+  td {
+    border-top: 1px solid black;
+    padding: 5px;
+  }
