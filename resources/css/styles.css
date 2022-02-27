@@ -8,6 +8,7 @@ h1 {
     text-align: center;
 }
 
+
  /* Table */
 
  table {
@@ -26,3 +27,13 @@ h1 {
     border-top: 1px solid black;
     padding: 5px;
   }
+
+  td.fitwidth {
+    width: 3px;
+    white-space: nowrap;
+}
+
+  .selector {
+    color:red;
+  }
+
