@@ -6,8 +6,13 @@ body {
 
 h1 {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+h2 {
+    padding-left: 22%;
+}
 
  /* Table */
 
@@ -25,15 +30,19 @@ h1 {
 
   td {
     border-top: 1px solid black;
-    padding: 5px;
+    padding: 3px;
   }
-
-  td.fitwidth {
-    width: 3px;
-    white-space: nowrap;
-}
 
   .selector {
-    color:red;
+    color: red;
+    font-weight: 540;
   }
 
+  /* Footer */
+
+  footer {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
